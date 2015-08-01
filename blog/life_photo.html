@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+ 		❤POPO & 雪雪 粉絲頁❤
+	</title>
+	<link rel=stylesheet type="text/css" href="homepage.css" />
+	<link rel=stylesheet type="text/css" href="navigation.css" />
+	<link rel=stylesheet type="text/css" href="content.css" />
+	<link rel=stylesheet type="text/css" href="queue.css" />
+</head>
+
+<!-- Content -->
+<body onload="timser();">
+		<div class="div_heading">	  		
+			<ul>
+				<li>
+					<a href="homepage.html"><img src="image/transparent.gif" class="img_home" /></a>
+				</li>
+				<li>
+					<a href="mailto:r00942088@ntu.edu.tw"><img src="image/mail.png" class="img_mail" /></a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Marqueue -->
+		<center>
+			<div class="div_marqueue1">
+					<MARQUEE onMouseOver="this.stop()" onMouseOut="this.start()" loop="-1" scrollamount="3" scrolldelay="1" direction="left" height="20%" weight="50%">
+					<a href="image/popo1.jpg"><img src="image/popo1.jpg" width="20%" height="15%" border="0"></a>
+					<a href="image/popo2.jpg"><img src="image/popo2.jpg" width="9%" height="15%" border="0"></a>
+					</MARQUEE>
+			</div>
+		</center>
+
+		<!-- Home page diagram -->
+		<div id="div_change" class="div_title_1">
+			<p class="p_title">
+				❤<font color="#000000"><strong> POPO </strong></font>&amp;<font color="#FFFFFF"> 雪雪 </font> ❤
+			</p>
+			<br/>
+
+		</div>
+		<center>
+			<div class="div_navigation1">
+				<ul>
+					<li>
+						<a href="about.html"> 關於我們 </a>
+					</li>
+					<li>
+						<a href="life_photo.html"> 生活相片 </a>
+					</li>
+				</ul>
+			</div>
+			<div class="div_content1">
+					<center>
+					<h3>❤拎拎系列❤</h3>
+					</center>
+				<p> 
+					<center>
+						<a href="image/lin1.jpg"><img src="image/lin1.jpg" width="50%" height="40%" border="0"></a></br>
+						<font color="#00AA00">
+							2014 杯和拎一起去台中勤美術館
+						</font>
+						</br></br>
+						<a href="image/lin2.jpg"><img src="image/lin2.jpg" width="50%" height="40%" border="0"></a></br>
+						<font color="#00AA00">
+							2014 杯和拎一起去新竹巨城過聖誕節
+						</font>
+					</center>
+				</p>
+			</div>
+		</center>
+
+		<!-- java script to change image 1000ms -->
+		<script>
+			var n=2;
+			function timser()
+			{
+				if (1 == n)
+				{
+					n = 2;
+				}
+				else
+				{
+					n = 1;
+				}
+				div_change.className="div_title_"+n;
+				setTimeout("timser()",3000);
+			}
+		</script>
+</body>
+
+<!-- End -->
+</html>
+
+
