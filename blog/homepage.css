@@ -21,7 +21,7 @@ body {
 	width: 85%;
 	height: 3em;
 
-	margin: 0 5.5em 0 0;
+	margin: 0;
 	padding: 0;
 
 	color: rgb( 0, 250, 154 );
@@ -75,7 +75,7 @@ body {
 	background-position: 0 -1em;
 
 	width: 70%;
-	height: 70%;
+	height: 55%;
 
 	margin: 0 auto;
 	padding: 0;
