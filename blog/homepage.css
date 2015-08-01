@@ -1,0 +1,101 @@
+/*  Body  */
+html {
+	height:  100%;
+	width: 100%;
+	margin:  0;
+	padding:  0;
+}
+
+body {
+	background-color: rgb( 235, 255, 255 );
+	height:  100%;
+	width: 100%;
+	margin:  0;
+	padding:  0;
+}
+
+
+/*  Heading  */
+.div_heading {
+	background-color: rgb( 235, 255, 255 );
+	width: 85%;
+	height: 3em;
+
+	margin: 0 5.5em 0 0;
+	padding: 0;
+
+	color: rgb( 0, 250, 154 );
+}
+
+.div_heading ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.div_heading li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+.img_home {
+	background: url( image/home.gif );
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	width: 2.8em;
+	max-height: 3em;
+}
+
+.img_mail {
+	max-width: 3em;
+	max-height: 2.8em;
+}
+
+.div_heading a:link, .div_heading a:visited {
+	text-decoration: none;
+}
+
+.div_heading a:hover {
+	text-decoration: none;
+	opacity: 0.4;
+}
+
+.div_heading a:active {
+	text-decoration: none;
+	cursor: wait;
+}
+
+/*  Title  */
+.div_title {
+	background-image: url( image/home.jpg );
+	background-repeat: no-repeat;
+	background-size:  100%;
+	background-position: 0 -1em;
+
+	width: 70%;
+	height: 70%;
+
+	margin: 0 auto;
+	padding: 0;
+}
+
+.p_title {
+	font-family: Times, serif;
+	font-size: 3.5em;
+	font-style: italic;
+
+	float: left;
+
+	margin: 0;
+	padding: 1em 0 1em 0.5em;
+
+	color: rgb( 240, 240, 0 );
+	text-height: 1em;
+	text-transform: capitalize;
+	text-align: left;
+	text-shadow: -2px -2px 0 #A00, 2px 2px 0 gray, 2px 2px 6px #333;
+}
+
+/*  Navigation list  */
