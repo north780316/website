@@ -11,7 +11,7 @@
 </head>
 
 <!-- Content -->
-<body>
+<body onload="timser();">
 		<div class="div_heading">	  		
 			<ul>
 				<li>
@@ -26,15 +26,16 @@
 		<!-- Marqueue -->
 		<center>
 			<div class="div_marqueue1">
-					<MARQUEE onMouseOver="this.stop()" onMouseOut="this.start()" loop="-1" scrollamount="6" scrolldelay="1" direction="left" height="20%" weight="50%">
-					<a href="image/sky.jpg"><img src="image/sky.jpg" width="20%" height="20%" border="0"></a>
-					<a href="image/home.jpg"><img src="image/home.jpg" width="20%" height="20%" border="0"></a>
+					<MARQUEE onMouseOver="this.stop()" onMouseOut="this.start()" loop="-1" scrollamount="3" scrolldelay="1" direction="left" height="20%" weight="50%">
+					<a href="image/popo1.jpg"><img src="image/popo1.jpg" width="20%" height="15%" border="0"></a>
+					<a href="image/popo2.jpg"><img src="image/popo2.jpg" width="9%" height="15%" border="0"></a>
 					</MARQUEE>
 			</div>
 		</center>
 
 		<!-- Home page diagram -->
-		<div class="div_title">
+		<div id="div_change" class="div_title_1" >
+
 			<p class="p_title">
 				❤<font color="#000000"><strong> POPO </strong></font>&amp;<font color="#FFFFFF"> 雪雪 </font> ❤
 			</p>
@@ -53,6 +54,25 @@
 				</ul>
 			</div>
 		</center>
+
+		<!-- java script to change image 1000ms -->
+		<script>
+			var n=2;
+			function timser()
+			{
+				if (1 == n)
+				{
+					n = 2;
+				}
+				else
+				{
+					n = 1;
+				}
+				div_change.className="div_title_"+n;
+				setTimeout("timser()",3000);
+			}
+		</script>
+			
 </body>
 
 <!-- End -->
